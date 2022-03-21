@@ -90,7 +90,7 @@ rawdata <- rawdata[-1]
 
 ```{r} 
 
-rawdata <- mutate(rawdata,label = recode(label,"1" = "Fake","0" = "Real")) 
+rawdata <- mutate(rawdata,label = recode(label,"1" = "Fake News","0" = "Real News")) 
 
 ``` 
 
