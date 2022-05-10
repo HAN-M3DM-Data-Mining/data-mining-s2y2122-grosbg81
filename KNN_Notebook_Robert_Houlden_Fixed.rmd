@@ -108,7 +108,7 @@ testDF_feat <- cleanDF_n[481:557,  ]
 trainDF_labels <- cleanDF[1:480,  1]
 testDF_labels <- cleanDF[481:557,  1]
 ```
-hjh
+
 ##Modelling & Evalutaion
 ```{r}
 cleanDF_test_pred <- knn(train = as.matrix(trainDF_feat), test = as.matrix(testDF_feat), cl = as.matrix(trainDF_labels), k = 7)
@@ -120,3 +120,8 @@ confusionMatrix(cleanDF_test_pred, testDF_labels[[1]], positive = NULL, dnn = c(
 ```
 ##Accuracy of 68% is too low
 ##I could have used more characteristics
+
+Comment
+
+Line 83: The function(x) was delate
+Line 109: It's missing testDF_labels <- cleanDF[481:557,  1]
